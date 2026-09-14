@@ -1,0 +1,70 @@
+{
+    "description": "BMS settings for London demo \u2014 centred on Farnborough Airfield (EGLF), UK.",
+    "location": "london",
+    "system": {
+        "defaultLatitude": 51.2777,
+        "defaultLongitude": -0.7761,
+        "fallbackLatitude": 51.2777,
+        "fallbackLongitude": -0.7761,
+        "defaultZoom": 10,
+        "zoneName": "London / Farnborough",
+        "callsign": "VULCAN"
+    },
+    "dataLayers": {
+        "layersFile": "bms-data-layers.json"
+    },
+    "routes": {
+        "defaultRoute": ""
+    },
+    "connectors": {
+        "json-file": {
+            "filePaths": [
+                "connectors/json/demo_objects.json",
+                "connectors/json/adsb_recorded_objects.json",
+                "connectors/json/ais_recorded_objects.json"
+            ],
+            "watchFile": false,
+            "pollInterval": 0
+        },
+        "gtfs": {
+            "sourcesFile": "connectors/gtfs/gtfs_sources_uk.json",
+            "enabled": false
+        },
+        "ais": {
+            "configFile": "connectors/ais/ais_config_uk.json",
+            "enabled": false
+        },
+        "adsb": {
+            "configFile": "connectors/adbs/adsb_config_uk.json",
+            "enabled": false
+        },
+        "cot": {
+            "configFile": "connectors/cot/cot_config.json"
+        },
+        "spx": {
+            "configFile": "connectors/spx/spx_config.json"
+        },
+        "sapient": {
+            "configFile": "connectors/sapient/sapient_config.json"
+        }
+    },
+    "display": {
+        "mapSource": "OpenStreetMap - Standard",
+        "layers": {
+            "symbols": true,
+            "routes": true,
+            "airports": true,
+            "airspaces": true,
+            "navaids": true,
+            "bullseyes": true,
+            "geofences": true,
+            "cameras": true,
+            "maritimeZones": true,
+            "shippingLanes": true,
+            "ports": true,
+            "maritimeNavAids": true,
+            "weatherRadar": false,
+            "clouds": false
+        }
+    }
+}
