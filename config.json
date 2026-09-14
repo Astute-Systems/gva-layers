@@ -1,0 +1,14 @@
+{
+    "description": "GVA Layers — top-level manifest pointing to each product's configuration",
+    "products": {
+        "talos": {
+            "configFile": "talos/talos_config.json"
+        },
+        "hermes": {
+            "configFile": "hermes/hermes-config.json"
+        },
+        "atlas": {
+            "configFile": "atlas/atlas-config.json"
+        }
+    }
+}
