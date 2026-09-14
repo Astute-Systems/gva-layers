@@ -19,32 +19,32 @@
     "connectors": {
         "json-file": {
             "filePaths": [
-                "demo_symbols.json",
-                "test_objects.json"
+                "connectors/json/demo_objects.json",
+                "connectors/json/test_objects.json"
             ],
             "watchFile": false,
             "pollInterval": 0
         },
         "gtfs": {
-            "sourcesFile": "gtfs_sources.json",
+            "sourcesFile": "connectors/gtfs/gtfs_sources.json",
             "enabled": false
         },
         "ais": {
-            "configFile": "ais_config.json",
+            "configFile": "connectors/ais/ais_config.json",
             "enabled": true
         },
         "adsb": {
-            "configFile": "adsb_config.json",
+            "configFile": "connectors/adbs/adsb_config.json",
             "enabled": true
         },
         "cot": {
-            "configFile": "cot_config.json"
+            "configFile": "connectors/cot/cot_config.json"
         },
         "spx": {
-            "configFile": "spx_config.json"
+            "configFile": "connectors/spx/spx_config.json"
         },
         "sapient": {
-            "configFile": "sapient_config.json"
+            "configFile": "connectors/sapient/sapient_config.json"
         }
     }
 }
