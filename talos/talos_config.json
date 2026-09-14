@@ -1,0 +1,62 @@
+{
+    "description": "BMS settings for Belfast \u2014 Belfast Harbour/Titanic Quarter, Northern Ireland.",
+    "location": "belfast",
+    "system": {
+        "defaultLatitude": 54.5973,
+        "defaultLongitude": -5.9301,
+        "fallbackLatitude": 54.5973,
+        "fallbackLongitude": -5.9301,
+        "defaultZoom": 9,
+        "zoneName": "Belfast Harbour",
+        "callsign": "BELFAST"
+    },
+    "dataLayers": {
+        "layersFile": "bms-data-layers.json"
+    },
+    "routes": {
+        "defaultRoute": ""
+    },
+    "connectors": {
+        "json-file": {
+            "filePaths": [
+                "connectors/json/demo_objects.json"
+            ],
+            "watchFile": false,
+            "pollInterval": 0
+        },
+        "gtfs": {
+            "enabled": true,
+            "sourcesFile": "connectors/gtfs/gtfs_sources.json"
+        },
+        "ais": {
+            "enabled": true,
+            "configFile": "connectors/ais/ais_config.json"
+        },
+        "adsb": {
+            "enabled": true,
+            "configFile": "connectors/adbs/adsb_config.json"
+        },
+        "cot": {
+            "configFile": "connectors/cot/cot_config.json"
+        }
+    },
+    "display": {
+        "mapSource": "Esri - World Imagery",
+        "layers": {
+            "symbols": true,
+            "routes": true,
+            "airports": true,
+            "airspaces": false,
+            "navaids": false,
+            "bullseyes": true,
+            "geofences": true,
+            "cameras": true,
+            "maritimeZones": true,
+            "shippingLanes": true,
+            "ports": true,
+            "maritimeNavAids": true,
+            "weatherRadar": false,
+            "clouds": false
+        }
+    }
+}
